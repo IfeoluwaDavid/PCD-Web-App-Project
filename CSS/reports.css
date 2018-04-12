@@ -15,27 +15,55 @@ body
 
 .input-group 
 {
-	margin: 5px 0px 0px 0px;
-	width: 100%;
+	display: block;
+	//margin: 5px 5px 5px 5px;
+	//width: 100%;
 }
 
 .input-group label
 {
+	padding-left: 200px;
+	padding-right: 30px;
 	font-weight: bold;
-	text-align: left;
-	//margin: 1px;
-
+	text-align: right;
+	float: left;
+	width: 10em;
 }
 
 .input-group input
 {
-	width: 98.5%;
+	width: 50%;
 	height: 23px;
 	padding: 5px;
 	font-size: 16px;
 	border-radius: 5px;
 	border: 1px solid gray;
-	margin-top: 5px;
+	width: 10em;
+}
+
+.identifier
+{
+	display: block;
+	margin: 5px 5px 5px 5px;
+	width: 100%;
+}
+
+.identifier label
+{
+	font-weight: bold;
+	text-align: left;
+	width: 10em;
+	margin-top: 10px;
+}
+
+.identifier input
+{
+	width: 50%;
+	height: 23px;
+	padding: 5px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid gray;
 }
 
 .title
@@ -50,16 +78,42 @@ body
 	text-align: center;
 }
 
-.btn
+
+.approveBtn
 {
 	width: 100%;
 	padding: 10px;
 	font-size: 15px;
 	color: white;
-	border-radius: 5px;
 	background: #5F9EA0;
-	margin: 0px auto;
-	margin-top: 5px;
+	border-radius: 5px;
+	margin-top: 10px;
+	
+}
+
+.delbtn
+{
+	width: 5%;
+	padding: 10px;
+	font-size: 15px;
+	color: white;
+	background: red;
+	border-radius: 5px;
+	//margin: 0px auto;
+	margin: 5px;
+
+}
+
+.btn
+{
+	//width: 100%;
+	padding: 10px;
+	font-size: 15px;
+	color: white;
+	background: #5F9EA0;
+	border-radius: 5px;
+	//margin: 0px auto;
+	margin: 5px;
 
 }
 
@@ -71,6 +125,7 @@ body
 	background: #f2dede; 
 	border-radius: 5px; 
 	text-align: center;
+	margin-bottom: 10px;
 }
 .success
 {
@@ -78,7 +133,7 @@ body
 	color: #3c763d;
 	background: #dff0d8;
 	border: 1px solid #3c763d;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 	text-align: center;
 }
 
@@ -125,7 +180,7 @@ h1
 li a 
 {
 	margin-top: 10px;
-	margin-bottom: 10px;
+	//margin-bottom: 10px;
 	font-size: 23px;
 	display: block;
 	color: #000;
@@ -151,7 +206,7 @@ li a:hover:not(.active)
 	
 	width: 20%;
     	float: left;
-    	margin-right: 10px;
+    	margin-right: 12px;
 }
 
 #rightcolumn
@@ -170,7 +225,28 @@ li a:hover:not(.active)
 .option 
 {
 	padding: 10px 10px 10px 10px;
-} 
+}
+
+div.ex2 
+{
+	border-radius: 5px;
+	background-color: lightblue;
+	overflow-y: hidden;
+	padding: 10px;
+	margin-top: 0px;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+div.ex1 
+{
+	background-color: lightblue;
+	overflow-y: scroll;
+	height: 270px;
+	padding: 20px;
+	margin-top: 10px;
+}
 
 </style>
 </head>

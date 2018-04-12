@@ -123,8 +123,9 @@ if (isset($_POST['update_pswd']))
 	<li><a href="mainoperationsA.php">Item Check-Out</a></li>
 	<li><a href="studentaccount.php">Student Account</a></li>
 	<li><a href="registeruser.php">Registration</a></li>
-	<li><a href="#about">Removals</a></li>
-	<li><a href="#about">Update Inventory</a></li>
+	<li><a href="removals.php">Removals</a></li>
+	<li><a href="inventory.php">Update Inventory</a></li>
+	<li><a href="reports.php">Daily Reports</a></li>
 	<li><a href="vieweditprofile.php">Profile Settings</a></li>
 	<li><a class="active" href="changepassword.php">Change Password</a></li>
 	<li><a href="logout.php">Log Out</a></li>
@@ -168,7 +169,7 @@ if (isset($_POST['update_pswd']))
 		</div>
 		
 		<div class="input-group">
-		<label>Confirm New Address:</label>
+		<label>Confirm New Password:</label>
 		<input type="password" name="confirmnew" value="<?php echo $confirmnew; ?>" required>
 		</div>
 		

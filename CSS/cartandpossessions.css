@@ -68,21 +68,27 @@ body
 
 .error
 {
+	padding: 1px;
 	width: 100%;
-	border: 1px solid #a94442; 
+	//border: 1px solid #a94442; 
 	color: #a94442; 
 	background: #f2dede; 
-	border-radius: 5px; 
+	border-radius: 5px;
+	border: 1px solid #a94442;
 	text-align: center;
+	margin-bottom: 10px;
 }
 .success
 {
+	padding: 1px;
 	width: 100%;
+	//border: 1px solid #3c763d;
 	color: #3c763d;
 	background: #dff0d8;
+	border-radius: 5px; 
 	border: 1px solid #3c763d;
-	margin-bottom: 20px;
 	text-align: center;
+	margin-bottom: 10px;
 }
 
 .errorFeedback
@@ -129,7 +135,7 @@ li a
 {
 	margin-top: 10px;
 	margin-bottom: 10px;
-	font-size: 25px;
+	font-size: 23px;
 	display: block;
 	color: #000;
 	padding: 10px 10px;
@@ -225,6 +231,18 @@ li a:hover:not(.active)
 
 }
 
+.singleapprovebtn
+{
+	width: 10%;
+	padding: 10px;
+	font-size: 15px;
+	color: white;
+	background: #5F9EA0;
+	border-radius: 5px;
+	//margin: 0px auto;
+	margin: 5px;
+
+}
 /* Style the tab content */
 .tabcontent
 {
@@ -244,7 +262,6 @@ li a:hover:not(.active)
 	background: #5F9EA0;
 	border-radius: 5px;
 	//margin-top: 10px;
-	
 }
 
 div.ex2 

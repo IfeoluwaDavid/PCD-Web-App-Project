@@ -10,12 +10,6 @@ if (!isset($_SESSION['user_id']))
 	header('location: login.php');
 }
 
-if (!isset($_SESSION['studentuserid']))
-{
-	array_push($errors, "Student must be verified first");
-	header('location: mainoperationsA.php');
-}
-
 if (isset($_POST["back"]))
 {
 	header('location: mainoperationsB.php');	
@@ -118,7 +112,7 @@ if (isset($_POST["approve"]))
 <html>
 <head>
 	<title>Home</title>
-	<link rel="stylesheet" type="text/css" href="CSS/mainoperationsC.css">
+	<link rel="stylesheet" type="text/css" href="CSS/reports.css">
 </head>
 <body>
 	<div class="header">
@@ -133,19 +127,19 @@ if (isset($_POST["approve"]))
 	<li><a href="registeruser.php">Registration</a></li>
 	<li><a href="removals.php">Removals</a></li>
 	<li><a href="inventory.php">Update Inventory</a></li>
-	<li><a href="reports.php">Daily Reports</a></li>
-	<li><a class="active" href="vieweditprofile.php">Profile Settings</a></li>
+	<li><a class="active" href="reports.php">Daily Reports</a></li>
+	<li><a href="vieweditprofile.php">Profile Settings</a></li>
 	<li><a href="changepassword.php">Change Password</a></li>
 	<li><a href="logout.php">Log Out</a></li>
 	</ul>
 	</div>
 	
 	<div id="rightcolumn">
-	<form method="post" action="mainoperationsC.php">
+	<form method="post" action="reports.php">
 	
 		<div class="title">
 		<h3>
-		<?php echo "Item Quantity & Check-Out Summary (3/3)"; ?>
+		<?php echo "Daily Reports - Pending Student Returns"; ?>
 		</h3>
 		</div>
 		
@@ -162,20 +156,12 @@ if (isset($_POST["approve"]))
 		<?php endif ?>
 		
 		<?php include('errors.php'); ?>
-		
-		<div class="ex2" id="identity">
-		<?php echo "".$_SESSION['studentfullname']."";?>
-		</div>
 	
-		<div class="ex1" id="itemlist">
-		</div>
+		<select id="selectholder" name="color" size="20" class="select">
+		</select>
 		
 		<div class="input-group">
-		<button class="approveBtn" name="approve">Approve Items</button>
-		</div>
-		
-		<div class="input-group">
-		<button class="approveBtn" name="back">Back</button>
+		<button class="approveBtn" name="">View Student</button>
 		</div>
 		
 	</form>
